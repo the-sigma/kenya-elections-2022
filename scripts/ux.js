@@ -157,7 +157,7 @@ UX.prototype.isCompl = function (obj) {
 		</div>
 		<div class="p-elect-div">
 		<img class="flag" src="imgs/flagbg.jpg">
-		<img src="imgs/confetti.gif">
+		<!-- <img src="imgs/confetti.gif">-->
 		<div class="p-elect-ctn">
 		<div class="p-elect-img">
 		<img src="imgs/Presidential/${win[0]}.png">
