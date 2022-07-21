@@ -157,7 +157,7 @@ UX.prototype.isCompl = function (obj) {
 		</div>
 		<div class="p-elect-div">
 		<img class="flag" src="imgs/flagbg.jpg">
-		<!-- <img src="imgs/confetti.gif">-->
+		<img src="imgs/confetti.gif">
 		<div class="p-elect-ctn">
 		<div class="p-elect-img">
 		<img src="imgs/Presidential/${win[0]}.png">
@@ -186,7 +186,7 @@ UX.prototype.isCompl = function (obj) {
 		</div>`
 	} else {
 		this.liveBx.innerHTML = `<h6>LIVE<span></span></h6>
-		<h2>Provisional Results</h2>`
+		<h2>Presidential Results</h2>`
 		this.pElect.innerHTML = ""
 	}
 }
