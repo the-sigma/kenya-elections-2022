@@ -750,7 +750,7 @@ img {
 	height: 12px;
 	margin-right: 10px;
 	display: inline-block;
-	border: 1px solid hsl(222, 5%, 50%);
+	border: 1px solid rgba(0, 0, 0, 0.9);
 	--bg: hsl(222, 5%, var(--lgt));
 	background: var(--bg);
 }
