@@ -1,0 +1,29 @@
+
+
+@media screen and (max-width :768px){
+	#home .ctn .ke22 h3{
+		font-size:1.5rem;
+	}
+	#home .ctn .ke22 h2{
+		font-size:2rem;
+	}
+	
+	.progres,
+	#progress .struct
+	{
+		grid-template-columns:repeat(1, 1fr);
+	}
+	.pgsrbox .seat {
+		padding:10px;
+	}
+	
+	.map,
+	.struct .map-struct{
+		grid-column:1;
+		grid-row:2;
+	}
+
+	.mdlbody .swop{
+		display:block;
+	}
+}

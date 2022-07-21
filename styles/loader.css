@@ -1,0 +1,46 @@
+.loader{
+	position:fixed;
+	width:100vw;
+	height:100vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+	background:#fff;
+	z-index:1000;
+}
+
+.loader .loadctn{
+	position:relative;
+	width:4rem;
+}
+.loader .loadctn svg{
+	position:relative;
+	width:100%;
+	height:100%;
+	display:block;
+}
+
+.loader .loadctn svg g{
+	animation: dim 2s linear;
+}
+.loader .dur{
+	position:relative;
+	text-align:center;
+	margin-top:20px;
+}
+.loader .dur h5{
+	font-family: monospace;
+}
+	
+@keyframes dim{
+	0%{
+		fill:#eee;
+	}
+	50%{
+		fill:#ccc;
+	}
+	100%{
+		fill:#27abab;
+	}
+}
