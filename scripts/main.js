@@ -1,18 +1,18 @@
 window.onload = () =>{
 	let ui = new UI(), ux = new UX(), dd = new Date("8/9/2022"), durDiv = document.querySelector(".loader .dur")
 	
-	setInterval(()=>{
-		let nn = dd - Date.now(),
-		    obj = convMs(nn)
-		durDiv.innerHTML = `<h3>LIVE IN</h3><h5>${obj.d} Days: ${obj.h} Hrs: ${obj.m} Min: ${obj.s} Sec</h5>`
-	}, 1000)
+	// setInterval(()=>{
+	// 	let nn = dd - Date.now(),
+	// 	    obj = convMs(nn)
+	// 	durDiv.innerHTML = `<h3>LIVE IN</h3><h5>${obj.d} Days: ${obj.h} Hrs: ${obj.m} Min: ${obj.s} Sec</h5>`
+	// }, 1000)
 	
-	// ui.endLoad()
-	// ui.closeDlg()
-	// ui.events()
-	// ux.__init__()
-	// ux.loadMap()
-	// ux.mapEvents()
+	ui.endLoad()
+	ui.closeDlg()
+	ui.events()
+	ux.__init__()
+	ux.loadMap()
+	ux.mapEvents()
 }
 
 function convMs(ms) {
