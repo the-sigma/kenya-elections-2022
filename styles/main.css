@@ -73,13 +73,82 @@ body {
 }
 
 #home {
-	background: radial-gradient(#0000, #0b0b45);
+	background:#e2e7f5;
 }
 
 #home .ctn {
 	position: relative;
 }
 
+.ctn .box{
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+}
+.ctn .box .img{
+	width:80px;
+	height:80px;
+	position:relative;
+	border-radius:50%;
+	overflow:hidden;
+	z-index:2;
+}
+.ctn .box .img::before{
+	width:90%;
+	height:90%;
+	content:"";
+	position:absolute;
+	left:50%;
+	top:10%;
+	transform:translateX(-50%);
+	border-radius:50%;
+	background:orange;
+	z-index:-1;
+}
+.ctn .box .img.wsr::before{
+	background:#ff5;
+}
+.ctn .box .img img{
+	width:100%;
+	display:block;
+}
+.ctn .box .h{
+	text-align:center;
+}
+.ctn .box .h h2{
+	font-size:30px;
+}
+.ctn .box .h .lv{
+	-webkit-text-stroke: 1px #333;
+	-moz-text-stroke: 1px #000;
+	color: transparent;
+}
+.ctn .box .h h1{
+	color:crimson;
+	border-top:1px solid black ;
+	border-bottom:1px solid black ;
+}
+.ctn .box .h .yr{
+	color:green;
+	display:flex;
+	padding-top:5px;
+	align-items:center;
+	justify-content:center;
+}
+.ctn .box .h .yr span{
+	position:relative;
+	width:25px;
+	height:25px;
+	display:inline-block;
+	background:green;
+	border-radius:50%;
+	margin:0 5px;
+}
+.ctn .box .h .yr span img{
+	width:100%;
+	display:block;
+}
+/* 
 #home .ctn:before {
 	width: 100%;
 	height: 100%;
@@ -108,7 +177,7 @@ body {
 	color: #712a;
 	font-size: 3rem;
 	-webkit-text-stroke: 1px #000;
-}
+} */
 
 .body-err div {
 	height: 100%;
@@ -962,7 +1031,7 @@ img {
 .cadimgctn,
 .topimg {
 	display: block;
-	background: url(../imgs/kbg.png) no-repeat;
+	background:  #e2e7f5;
 	background-size: cover;
 }
 
