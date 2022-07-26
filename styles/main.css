@@ -102,11 +102,11 @@ body {
 	top:10%;
 	transform:translateX(-50%);
 	border-radius:50%;
-	background: hsl(28, 96%, 54%);
+	background: orange;
 	z-index:-1;
 }
 .ctn .box .img.wsr::before{
-	background: hsl(48, 99%, 51%);
+	background: #ff5;
 }
 .ctn .box .img img{
 	width:100%;
