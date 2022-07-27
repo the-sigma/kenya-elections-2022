@@ -256,19 +256,16 @@ body {
 
 .p-elect-ctn .p-elect-desc h3 {
 	box-shadow: 0 1px 0 #fff;
-	font-weight: bold;
 }
 
 .p-elect-ctn .p-elect-desc h5 {
 	font-size: 0.6rem;
 	text-align: right;
-	font-weight: bold;
 }
 
 .p-elect-ctn .p-elect-desc p {
 	font-size: 2rem;
 	line-height: 1.8rem;
-	font-weight: bold;
 }
 
 .h5spcheck {
