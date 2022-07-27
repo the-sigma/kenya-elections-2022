@@ -204,14 +204,16 @@ UX.prototype.loadMain = function (obj) {
 		<div class="topimg">
 		<img src="imgs/rao.png" alt="raila">
 		</div>
-		<div class="name text-center my-2">
+		<div class="name text-center mb-1">
+		<h5>Raila</h5>
 		</div>
 		</div>
 		<div class="top">
 		<div class="topimg">
 		<img src="imgs/wsr.png" alt="ruto">
 		</div>
-		<div class="name text-center my-2">
+		<div class="name text-center mb-1">
+		<h5>Ruto</h5>
 		</div>
 		</div>
 		</div>

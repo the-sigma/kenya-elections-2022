@@ -102,11 +102,11 @@ body {
 	top:10%;
 	transform:translateX(-50%);
 	border-radius:50%;
-	background: hsl(28, 96%, 54%);
+	background: orange;
 	z-index:-1;
 }
 .ctn .box .img.wsr::before{
-	background: hsl(48, 99%, 51%);
+	background: #ff5;
 }
 .ctn .box .img img{
 	width:100%;
@@ -881,7 +881,7 @@ img {
 }
 
 .apcr .cadctn {
-	margin: 20px 0;
+	margin: 10px 0;
 	--partyCol: #4d5061;
 	box-shadow: 0 1px var(--partyCol);
 }
@@ -895,7 +895,7 @@ img {
 }
 
 .apcr .agano.cadctn {
-	--partyCol: #0e38ae;
+	--partyCol: #26408b;
 }
 
 .apcr .roots.cadctn {
@@ -918,8 +918,8 @@ img {
 }
 
 .apcr .votes {
-	margin-top: 20px;
-	border-bottom:solid 1px #ddd;
+	margin-top: 25px;
+	border-bottom:solid 1px rgba(0, 0, 0, 0.5);
 }
 
 .seat .votes h3,
@@ -939,19 +939,19 @@ img {
 }
 
 .apcr .votes .void {
-	box-shadow: 0 0 0 1px #990011;
+	box-shadow: 0 0 0 1px rgba(153, 0, 18, 0.8);
 }
 
 .apcr .votes .void h5 {
-	background: #990011;
+	background: rgba(153, 0, 18, 0.8)
 }
 
 .apcr .votes .cast {
-	box-shadow: 0 0 0 1px #390;
+	box-shadow: 0 0 0 1px rgba(51, 153, 0, 0.8);
 }
 
 .apcr .votes .cast h5 {
-	background: #390;
+	background: rgba(51, 153, 0, 0.8)
 }
 
 .apcr .cadctn .nmpt h5,
@@ -1013,7 +1013,7 @@ img {
 
 .seat h3 {
 	text-align: center;
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 	padding: 7px 0;
 	font-size: 1rem;
 	border: 2px solid hsl(222, 5%, 70%);
