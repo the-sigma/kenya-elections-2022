@@ -619,6 +619,7 @@ img {
 .mapid {
 	position: relative;
 	background: #002e63;
+        padding:7px 0;
 	color: #def;
 	box-shadow: 0 3px 7px #ddd;
 }
