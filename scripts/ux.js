@@ -151,40 +151,49 @@ UX.prototype.isCompl = function (obj) {
 	if (obj.msc.complete) {
 		let nat = obj.national,
 			sorted = this.sortObj(nat["candidates"]),
-			win = Object.entries(sorted)[0]
+			win = Object.entries(sorted)[0],
+			nm = win[1][0].split(" "),
+			fnm = nm[0],
+			lnm = nm[1]
 		this.liveBx.innerHTML = `<h2>Election Results</h2>`
 		this.pElect.innerHTML = `<div class="pediv">
 		<h2 class="hr-brand">President Elect</h2>
-		</div>
-		<div class="p-elect-div">
+	</div>
+	<div class="p-elect-div">
 		<img class="flag" src="imgs/flagbg.jpg">
 		<img src="imgs/confetti.gif">
 		<div class="p-elect-ctn">
-		<div class="p-elect-img">
-		<img src="imgs/Presidential/${win[0]}.png">
+			<div class="p-elect-img">
+				<img src="imgs/Presidential/${win[0]}.png">
+			</div>
+			<div class="p-elect-desc">
+				<div>
+					<div class="elected flexrow">
+						<div class="nome">
+							<h6>${fnm}</h6>
+							<h2>${lnm}</h2>
+						</div>
+						<div class="check">
+							<img src="imgs/check.png">
+						</div>
+					</div>
+					<div class="h5spcheck">
+						<div class="h5sp">
+							<div class="h5">
+								<h5>ELECTED THE</h5>
+								<h5 class="m-0 p-0">PRESIDENT</h5>
+							</div>
+							<div class="p">
+								<p>5</p>
+								<h5>TH</h5>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="p-elect-desc">
-		<div>
-		<h3>${win[1][0]}</h3>
-		<div class="h5spcheck">
-		<div class="h5sp">
-		<div class="h5">
-		<h5>ELECTED THE</h5>
-		<h5 class="m-0 p-0">PRESIDENT</h5>
-		</div>
-		<div class="p">
-		<p>5</p>
-		<h5>TH</h5>
-		</div>
-		</div>
-		<div class="check">
-		<img src="imgs/check.png">
-		</div>
-		</div>
-		</div>
-		</div>
-		</div>
-		</div>`
+	</div>`
 	} else {
 		this.liveBx.innerHTML = `<h6>LIVE<span></span></h6>
 		<h2>Presidential Results</h2>`
