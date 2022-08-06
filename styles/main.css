@@ -821,7 +821,7 @@ img {
 	height: 12px;
 	margin-right: 10px;
 	display: inline-block;
-	border:1px solid #000;
+	border:1px solid #323232;
 	border-radius: 2px;
 	--bg: hsl(222, 5%, var(--lgt));
 	background: var(--bg);
