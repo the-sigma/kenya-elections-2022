@@ -3,12 +3,17 @@
 	user-select: none;
 	box-sizing: border-box;
 }
-
-/* html,
-body{
-	overflow-x: hidden;
-	max-width: 100%;
-} */
+:root{
+	--alp:1;
+	--blue:rgb(10, 78, 214);
+	--yellow:rgb(255, 193, 7);
+	--indigo:rgb(102, 16, 242);
+	--red:rgb(220, 53, 69);
+	--green:rgb(25, 135, 84);
+	--orange:rgb(253, 126, 20);
+	--dark:rgb(33, 37, 41);
+	--gray:rgb(148, 151, 158);
+}
 a {
 	text-decoration: none;
 }
@@ -52,7 +57,7 @@ body {
 	transform: rotate(90deg) translateX(0);
 	opacity: 0;
 	visibility: hidden;
-	background: hsl(222, 5%, 5%);
+	background: var(--dark);
 	border-radius: 50%;
 	z-index: 90;
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -103,11 +108,11 @@ body {
 	top:10%;
 	transform:translateX(-50%);
 	border-radius:50%;
-	background: orange;
+	background: var(--orange);
 	z-index:-1;
 }
 .ctn .box .img.wsr::before{
-	background: #ff5;
+	background: var(--yellow);
 }
 .ctn .box .img img{
 	width:100%;
@@ -120,17 +125,17 @@ body {
 	font-size:30px;
 }
 .ctn .box .h .lv{
-	-webkit-text-stroke: 1px #333;
+	-webkit-text-stroke: 1px var(--dark);
 	-moz-text-stroke: 1px #000;
 	color: transparent;
 }
 .ctn .box .h h1{
-	color:crimson;
-	border-top:1px solid black ;
-	border-bottom:1px solid black ;
+	color:var(--red);
+	border-top:1px solid var(--dark) ;
+	border-bottom:1px solid var(--dark) ;
 }
 .ctn .box .h .yr{
-	color:green;
+	color:var(--green);
 	display:flex;
 	padding-top:5px;
 	align-items:center;
@@ -141,7 +146,7 @@ body {
 	width:25px;
 	height:25px;
 	display:inline-block;
-	background:green;
+	background:var(--green);
 	border-radius:50%;
 	margin:0 5px;
 }
@@ -282,7 +287,7 @@ body {
 .elected .check::before{
 	width:60%;
 	height:60%;
-	border:2px solid #3a0;
+	border:2px solid var(--green);
 	content:"";
 	top:50%;
 	left:50%;
@@ -313,13 +318,13 @@ body {
 	display: flex;
 	background: #fff;
 	padding-right: 3px;
-	color: #000;
+	color: var(--dark);
 }
 
 .h5spcheck .p p {
 	font-size: 2rem;
 	line-height: 2rem;
-	font-weight: 500;
+	font-weight: 700;
 	margin: 0;
 }
 
@@ -523,9 +528,9 @@ img {
 	width: 100%;
 	height: 10px;
 	margin-bottom: 5px;
-	background: hsl(222, 5%, 70%);
-	box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3),
-		inset 0 -3px 5px rgba(255, 255, 255, 0.25);
+	background: var(--gray);
+	box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+		inset 2px -2px 5px rgba(0, 0, 0, 0.25);
 	border-radius: 20px;
 	overflow: hidden;
 }
@@ -547,26 +552,18 @@ img {
 	display: block;
 }
 
-.bar h6 span.azimio {
-	background: hsl(28, 96%, 54%);
-}
-
-.bar h6 span.uda {
-	background: hsl(48, 99%, 51%);
-}
-
 .bar .barctn .race1 {
-	background: hsl(28, 96%, 54%);
+	background: var(--blue);
 	left: 0;
 	box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.25),
-		inset 2px -3px 5px rgba(0, 0, 0, 0.3);
+		inset 2px -2px 5px rgba(0, 0, 0, 0.25);
 }
 
 .bar .barctn .race2 {
-	background: hsl(48, 99%, 51%);
+	background: var(--yellow);
 	right: 0;
 	box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.25),
-		inset -2px -3px 5px rgba(0, 0, 0, 0.3);
+		inset -2px -2px 5px rgba(0, 0, 0, 0.25);
 }
 .cadctn{
 	position: relative;
@@ -644,9 +641,9 @@ img {
 
 .mapid {
 	position: relative;
-	background: #002e63;
-	color: #def;
-	box-shadow: 0 3px 7px #ddd;
+	background: #eee;
+	color: var(--dark);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .mapid .close {
@@ -668,20 +665,31 @@ img {
 	left: 10px;
 	top: 50%;
 	transform: translateY(-50%) rotate(-45deg);
+}
+
+.float a:before {
 	border-top: 2px solid #def;
 	border-left: 2px solid #def;
 }
-
+.mapid .close:before{
+	border-top: 2px solid var(--dark);
+	border-left: 2px solid var(--dark);
+}
 .mapid .close:after,
 .float a:after {
 	width: 20px;
 	height: 2px;
 	position: absolute;
-	background: #def;
 	content: "";
 	left: 10px;
 	top: 50%;
 	transform: translateY(-50%);
+}
+.mapid .close:after {
+	background: var(--dark);
+}
+.float a:after {
+	background: #def;
 }
 
 .mapid h2,
@@ -821,31 +829,28 @@ img {
 	height: 12px;
 	margin-right: 10px;
 	display: inline-block;
-	border:1px solid #323232;
-	border-radius: 2px;
-	--bg: hsl(222, 5%, var(--lgt));
-	background: var(--bg);
+	box-shadow:0 0 0 1px var(--dark);
+	background: var(--gray);
 }
 
 .map .label .lblodm {
-	--bg: hsl(28, 90%, 54%);
+	background: var(--blue);
 }
 
 .map .label .lbluda {
-	--bg: hsl(48, 90%, 51%);
+	background: var(--yellow);
 }
 
 .map .label .lblother {
-	--lgt: 50%;
-	--bg: hsl(135, 50%, var(--lgt));
+	background: var(--red);
 }
 
 .map .label .lbltie {
-	--bg: hsl(220, 85%, var(--lgt));
+	background: var(--green);
 }
 
 .label .lblpend {
-	background: var(--bg);
+	background: var(--gray);
 }
 
 .map .cnty svg {
@@ -857,38 +862,35 @@ img {
 }
 
 .map svg g {
-	--svgg: hsl(222, 5%, var(--lgt));
-	fill: var(--svgg);
+	--gray:rgb(148, 151, 158, var(--alp));
+	fill: var(--gray);
 	pointer-events: all;
 }
 
 .map svg .odm,
 .map svg .azimio {
-	--lgt: 54%;
-	--svgg: hsl(28, 90%, var(--lgt));
-	fill: var(--svgg);
+	--blue:rgb(10, 78, 214, var(--alp));
+	fill: var(--blue);
 }
 
 .map svg .uda {
-	--lgt: 51%;
-	--svgg: hsl(48, 90%, var(--lgt));
-	fill: var(--svgg);
+	--yellow:rgb(255, 193, 7, var(--alp));
+	fill: var(--yellow);
 }
 
 .map svg .other {
-	--lgt: 50%;
-	--svgg: hsl(135, 50%, var(--lgt));
-	fill: var(--svgg);
+	--red:rgb(220, 53, 69, var(--alp));
+	fill: var(--red);
 }
 
 .map svg .tie {
-	--svgg: hsl(220, 85%, var(--lgt));
-	fill: var(--svgg);
+	--green:rgb(25, 135, 84, var(--alp));
+	fill: var(--green);
 }
 
 .map .cnty svg g:active,
 .map .cnty svg g:hover {
-	--lgt: 75%;
+	--alp: 0.7;
 }
 
 .map .cnty svg .lbl,
@@ -906,33 +908,31 @@ img {
 
 .apcr .cadctn {
 	margin: 10px 0;
-	--partyCol: #4d5061;
+	--partyCol: var(--gray);
 	box-shadow: 0 1px var(--partyCol);
 }
 
 .apcr .azimio.cadctn {
-	--partyCol: #fa841a;
+	--partyCol: var(--blue);
 }
 
 .apcr .uda.cadctn {
-	--partyCol: #fecd04;
+	--partyCol: var(--yellow);
 }
 
 .apcr .agano.cadctn {
-	--partyCol: #302997;
+	--partyCol: var(--indigo);
 }
 
 .apcr .roots.cadctn {
-	--partyCol: rgb(187, 16, 50);
+	--partyCol: var(--red);
 }
 
-.apcr .cadctn .nmpt h6,
 .apcr .cadctn .accm h6,
-.apcr .votes .accm h5,
-.bar h6 .p-name {
+.apcr .votes .accm h5 {
 	color: #fff;
 	font-size: 10px;
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 	margin:0;
 	padding:0 auto;
 }
@@ -943,7 +943,7 @@ img {
 
 .apcr .votes {
 	margin-top: 25px;
-	border-bottom:solid 1px rgba(0, 0, 0, 0.5);
+	border-bottom:solid 1px rgba(0, 0, 0, 0.25);
 }
 
 .seat .votes h3,
@@ -963,19 +963,19 @@ img {
 }
 
 .apcr .votes .void {
-	box-shadow: 0 0 0 1px rgba(153, 0, 18, 0.8);
+	box-shadow: 0 0 0 1px var(--red);
 }
 
 .apcr .votes .void h5 {
-	background: rgba(153, 0, 18, 0.8)
+	background: var(--red)
 }
 
 .apcr .votes .cast {
-	box-shadow: 0 0 0 1px rgba(51, 153, 0, 0.8);
+	box-shadow: 0 0 0 1px var(--green);
 }
 
 .apcr .votes .cast h5 {
-	background: rgba(51, 153, 0, 0.8)
+	background: var(--green)
 }
 
 .apcr .cadctn .nmpt h5,
@@ -989,17 +989,11 @@ img {
 
 .apcr .accm h6{
 	background: var(--partyCol);
-	box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.25),
-		inset -2px -3px 5px rgba(0, 0, 0, 0.3); 
 }
 
 .apcr .nmpt h6 .p-name,
 .bar h6 .p-name{
-	background: var(--partyCol);
 	font-size: .5rem;
-	box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.25),
-		inset -2px -3px 5px rgba(0, 0, 0, 0.3); 
-	border-radius: 10px;
 	display: inline-block;
 }
 

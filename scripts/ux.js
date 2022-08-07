@@ -229,9 +229,9 @@ UX.prototype.loadMain = function (obj) {
 		</div>
 		<div class="bar">
 		<div class="pmp flexrow mb-1">
-		<h6 class="flexrow"><span class="picon odcon"><img src="imgs/azimio.png" alt="azimio"></span><span class="p-name azimio text-light px-1">AZIMIO</span></h6>
+		<h6 class="flexrow"><span class="picon odcon"><img src="imgs/azimio.png" alt="azimio"></span><span class="p-name azimio px-1">AZIMIO</span></h6>
 		<h6>50% +1 to win</h6>
-		<h6 class="flexrow"><span class="p-name uda text-light px-1">UDA</span><span class="picon udcon"><img src="imgs/uda.png" alt="uda"></span></h6>
+		<h6 class="flexrow"><span class="p-name uda px-1">UDA</span><span class="picon udcon"><img src="imgs/uda.png" alt="uda"></span></h6>
 		</div>
 		<div class="barctn">
 		<span class="race1" style="width:${azimio[1][3]};"></span>
