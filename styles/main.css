@@ -108,7 +108,7 @@ body {
 	top:10%;
 	transform:translateX(-50%);
 	border-radius:50%;
-	background: var(--blue);
+	background: var(--orange);
 	z-index:-1;
 }
 .ctn .box .img.wsr::before{
