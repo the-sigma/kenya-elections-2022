@@ -108,11 +108,11 @@ body {
 	top:10%;
 	transform:translateX(-50%);
 	border-radius:50%;
-	background: var(--orange);
+	background: orange;
 	z-index:-1;
 }
 .ctn .box .img.wsr::before{
-	background: var(--yellow);
+	background: #ff5;
 }
 .ctn .box .img img{
 	width:100%;
@@ -808,7 +808,7 @@ img {
 }
 
 .map .cnty img {
-	filter: invert(100%) drop-shadow(3px 3px 3px #ddd);
+	filter: brightness(10%) drop-shadow(3px 3px 3px #ddd);
 }
 
 .map .label {
@@ -994,6 +994,7 @@ img {
 .apcr .nmpt h6 .p-name,
 .bar h6 .p-name{
 	font-size: .5rem;
+	font-weight: 700;
 	display: inline-block;
 }
 
@@ -1003,7 +1004,8 @@ img {
 	padding: 0 5px;
 }
 .apcr .cadctn h5 {
-	font-size: 0.85rem;
+	font-size: 0.9rem;
+	font-weight: 500;
 }
 
 .apcr .cadctn .accm h6,
