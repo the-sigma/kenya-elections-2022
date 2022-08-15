@@ -7,12 +7,14 @@ window.onload = () =>{
 	// 	durDiv.innerHTML = `<h3>LIVE IN</h3><h5>${obj.d} Days: ${obj.h} Hrs: ${obj.m} Min: ${obj.s} Sec</h5>`
 	// }, 1000)
 	
+	
+// 	ui.closeDlg()
+// 	ui.events()
+// 	ux.__init__()
+// 	ux.loadMap()
+// 	ux.mapEvents()
 	ui.endLoad()
-	ui.closeDlg()
-	ui.events()
-	ux.__init__()
-	ux.loadMap()
-	ux.mapEvents()
+	location.href = "https://amwata.github.io/"
 }
 
 function convMs(ms) {
