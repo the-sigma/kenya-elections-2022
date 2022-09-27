@@ -8,13 +8,13 @@ window.onload = () =>{
 	// }, 1000)
 	
 	
-// 	ui.closeDlg()
-// 	ui.events()
-// 	ux.__init__()
-// 	ux.loadMap()
-// 	ux.mapEvents()
+ 	ui.closeDlg()
+	ui.events()
+	ux.__init__()
+	ux.loadMap()
+	ux.mapEvents()
 	ui.endLoad()
-	location.href = "https://amwata.github.io/"
+	//location.href = "https://amwata.github.io/"
 }
 
 function convMs(ms) {
